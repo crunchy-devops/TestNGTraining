@@ -1,0 +1,145 @@
+{
+  "id": "fe83ad9f-95b0-4c9e-83e3-dedef6c1de90",
+  "version": "2.0",
+  "name": "test",
+  "url": "http://demo-store.seleniumacademy.com",
+  "tests": [{
+    "id": "539b8295-f08e-43a7-b9b3-8b598f24fa19",
+    "name": "demo-store",
+    "commands": [{
+      "id": "295c14c2-8949-4b6c-bdd7-3ad4fc3a4411",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdc81e7a-8fee-40e1-950f-fceab61de692",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "975834a0-4b5e-43dc-9e3e-fcef10f7eebc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .product-name > a",
+      "targets": [
+        ["css=.item:nth-child(1) .product-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Chelsea Tee')]", "xpath:link"],
+        ["xpath=//html[@id='top']/body/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/ul/li/div/h3/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://demo-store.seleniumacademy.com/chelsea-tee-703.html'])[2]", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb62ee11-d211-40f7-b5e8-af3648ceb63c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.skip-account > .label",
+      "targets": [
+        ["css=.skip-account > .label", "css:finder"],
+        ["xpath=//header[@id='header']/div/div[2]/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e04b559-6756-4e05-a64d-40c5024bab23",
+      "comment": "",
+      "command": "click",
+      "target": "css=ul:nth-child(1) > .first > a",
+      "targets": [
+        ["css=ul:nth-child(1) > .first > a", "css:finder"],
+        ["xpath=//a[contains(text(),'My Account')]", "xpath:link"],
+        ["xpath=//div[@id='header-account']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://demo-store.seleniumacademy.com/customer/account/'])[2]", "xpath:href"],
+        ["xpath=//div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc7b5129-7895-4232-be3d-aa926940e28a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.skip-cart > .icon",
+      "targets": [
+        ["css=.skip-cart > .icon", "css:finder"],
+        ["xpath=//header[@id='header']/div/div[2]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ec8f7e5-5c75-4791-9c49-ed5e141a1ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.skip-search > .label",
+      "targets": [
+        ["css=.skip-search > .label", "css:finder"],
+        ["xpath=//header[@id='header']/div/div[2]/a[2]/span[2]", "xpath:idRelative"],
+        ["xpath=//a[2]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "349ee46d-1f09-4c9f-9de8-0b1af200633e",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search_mini_form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6da41583-183f-42b3-a93e-fddbb99645b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search_mini_form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "phones"
+    }, {
+      "id": "563dfc8a-b20c-4d88-aaf2-a0d87e0ab260",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//form[@id='search_mini_form']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "37cfbf40-4bb8-4330-9f4b-4c9e5861b91d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7cf0fe4c-2d69-4a22-bd0c-506b271512e9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["539b8295-f08e-43a7-b9b3-8b598f24fa19"]
+  }],
+  "urls": ["http://demo-store.seleniumacademy.com/"],
+  "plugins": []
+}
